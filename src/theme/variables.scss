@@ -74,4 +74,29 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  --ion-color-ayam: #f75895;
+  --ion-color-ayam-rgb: 245, 61, 61;
+  --ion-color-ayam-contrast: #ffffff;
+  --ion-color-ayam-contrast-rgb: 255, 255, 255;
+  --ion-color-ayam-shade: #d33939;
+  --ion-color-ayam-tint: #f25454;
+
+  ion-tab-button.tab-selected {
+    ion-content {
+      color: var(--ion-color-ayam) !important;
+      --ion-color-base: var(--ion-color-ayam) !important;
+    }
+
+  }
+
+}
+
+.ion-color-ayam {
+  --ion-color-base: var(--ion-color-ayam);
+  --ion-color-ayam-rgb: var(--ion-color-ayam-rgb);
+  --ion-color-ayam-contrast: var(--ion-color-ayam-contrast);
+  --ion-color-ayam-contrast-rgb: var(--ion-color-ayam-contrast-rgb);
+  --ion-color-ayam-shade: var(--ion-color-ayam-shade);
+  --ion-color-ayam-tint: var(--ion-color-ayam-tint);
 }

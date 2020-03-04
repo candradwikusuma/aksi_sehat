@@ -1,1 +1,174 @@
+// * {
+//     --ion-color-primary: #7CA873;
+//   }
+// :host {
+//     .background-image {
+//         background: url('../../assets/30b863ed75c38c1bb345ec5770f7f7eb.jpg') no-repeat 100% 100%;
+//     }
 
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     background-size: cover;
+
+//     background-position-y: 0mm;
+//     background-size: 100%,
+//     100%,
+//     100%,
+//     100%;
+
+// }
+
+// .backgorund-page {
+//     background-image: url('../../assets/candra_foto.jpg');
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     background-size: cover;
+// }
+
+.menu {
+    margin: left;
+}
+
+//https://picsum.photos/1080
+.background {
+    --background: url('https://picsum.photos/1080') 0 0/100% 55% no-repeat;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // background-size: 20px 10px;
+
+}
+
+// ion-content {
+//     --background: transparent;
+//     transform: translate3d(0, 200px, 0);
+//     transition: 1s;
+// }
+
+.content-container {
+    --background: transparent;
+    transform: translate3d(0, 0, 0);
+    transition: 1s;
+}
+
+.no-transform {
+    transform: translate3d(0, 0, 0) !important;
+
+}
+
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    --border-width: 0 !important;
+}
+
+// ion-header{
+//     --background: transparent;
+//     // --border-width: 0 !important;
+// }
+.content-container {
+    background-color: #ffff;
+    height: 100%;
+    border-radius: 40px;
+    padding-top: 30px;
+    overflow: scroll;
+    padding-bottom: 30px;
+}
+
+// .welcome-card {
+//     margin-top: -80px;
+//     z-index: 5;
+// }
+
+
+ion-badge {
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 100%;
+}
+
+.category-block {
+    margin-bottom: 4px;
+}
+
+.category-banner {
+    border-left: 8px solid var(--ion-color-secondary);
+    background: var(--ion-color-light);
+    height: 40px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+ion-card-title {
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+
+.card {
+    position: relative;
+    text-align: center;
+
+
+}
+
+.card-title {
+    position: absolute;
+    top: 40%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+}
+
+.card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    color: #fff;
+
+}
+
+
+.swiper-slide img {
+    width: auto;
+    max-width: 280px;
+    height: auto;
+    max-height: 100%;
+}
+
+.jumbotron h2 {
+    text-align: center;
+    margin-bottom: 100px;
+    color: cornsilk;
+    text-shadow: 1px 1px 10px green;
+    margin-top: 50px;
+    background: transparent;
+}
+
+.jumbotron {
+
+    background-color: transparent;
+}
+
+
+
+ion-list-header h3 {
+    font-weight: bold;
+}
+
+.label {
+    margin-top: -18px;
+
+}
+
+ion-label {
+    color: #7CA873;
+}

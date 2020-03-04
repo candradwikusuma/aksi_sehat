@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="" icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+    <!-- <ion-icon (click)="back()" slot="start" name="chevron-back-outline"></ion-icon> -->
+    <ion-title>taskprogress</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-title>Today</ion-card-title>
+    </ion-card-header>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://api.adorable.io/avatars/122/sdafhjk.png">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Child 1</h2>
+        <h3>10 Task</h3>
+      </ion-label>
+    </ion-item>
+    <ion-card-content>
+      <ion-list>
+        <ion-list-header>Task List</ion-list-header>
+
+        <ion-item class="tasklist" *ngFor="let Task of Tasklist">
+          <ion-label class="ion-text-wrap">{{Task.name}}</ion-label>
+          <h3>{{Task.point}} point</h3>
+
+          <ion-checkbox color="success" checked slot="start" [(ngModel)]="Task.isChecked"></ion-checkbox>
+        </ion-item>
+
+      </ion-list>
+      <hr>
+      <ion-label>
+        <h3>Total Task Completed 10/10</h3>
+        <h3>Total Point 1000 point</h3>
+      </ion-label>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col></ion-col>
+          <ion-col></ion-col>
+          <ion-col></ion-col>
+          <ion-col></ion-col>
+          <ion-col>
+            <ion-button size="default" color="primary" type="submit">Submit</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+
+
+    </ion-card-content>
+
+  </ion-card>
+
+
+</ion-content>

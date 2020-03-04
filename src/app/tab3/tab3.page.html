@@ -1,9 +1,66 @@
-<ion-header>
+<!-- <ion-header hidenav-header>
   <ion-toolbar>
-    <ion-title>
-      Tab Three
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+    <ion-buttons slot="secondary">
+      <ion-button color="secondary">
+        <ion-icon slot="icon-only" name="more"></ion-icon>
+      </ion-button>
 
-<ion-content></ion-content>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="contact"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+    <ion-title>Default Buttons</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<hidenav-stretchheader header-height="45" opacity-factor="9" opacity-color="white" init-expanded="true"
+  no-border="true">
+  <ion-toolbar #static>
+    <ion-buttons slot="secondary">
+      <ion-button color="secondary">
+        <ion-icon slot="icon-only" name="more"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+
+    <ion-title color="primary" (click)="expand()">Parents</ion-title>
+  </ion-toolbar>
+
+  <div class="jumbotron text-center" #shrinkexpand (click)="expand()">
+
+
+    <ion-avatar>
+      <img src="../../assets/candra_foto.jpg">
+    </ion-avatar>
+    <h4>Candra Dwi Kusuma</h4>
+
+  </div>
+</hidenav-stretchheader>
+
+<ion-content hidenav-content hidenav-sh-content>
+  <ion-card>
+    <ion-item>
+      <ion-icon name="person" slot="start"></ion-icon>
+      <ion-label position="stacked">Name</ion-label>
+      <ion-input value="Candra Dwi Kusuma" readonly></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="information-circle-outline" slot="start"></ion-icon>
+      <ion-label position="stacked">About</ion-label>
+      <ion-input value="Web developer" readonly></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="call" slot="start"></ion-icon>
+      <ion-label position="stacked">Phone</ion-label>
+      <ion-input value="08962621486" readonly></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-button (click)="edit()" color="ayam" expand="block" shape="round">Edit</ion-button>
+
+
+</ion-content>

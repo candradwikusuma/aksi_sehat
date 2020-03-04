@@ -1,0 +1,228 @@
+<ion-header>
+  <ion-toolbar scroll-Events="false">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon class="menu" color="light" slot="icon-only" name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon class="menu" color="light" slot="icon-only" name="person"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="light">Home</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+
+
+<ion-content fullscreen class="background">
+  <p #triggerElement></p>
+  <div class="jumbotron text-center">
+    <!-- <ion-avatar>
+      <img src="../../assets/candra_foto.jpg">
+    </ion-avatar> -->
+    <h2>Task</h2>
+
+  </div>
+
+
+  <div #a (ionScroll)="handleScroll($event)" scroll-Events="true" class="ion-padding content-container">
+    <!-- Default Segment -->
+    <ion-toolbar>
+      <ion-segment mode="md" color="success" [(ngModel)]="segment">
+        <ion-segment-button value="Progress">
+          <ion-label>In Progress</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="Completed">
+          <ion-label>Completed</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+
+    <div [ngSwitch]="segment">
+      <ion-list *ngSwitchCase="'Progress'">
+
+        <ion-list-header>
+          <h3>Today</h3>
+        </ion-list-header>
+        <ion-item (click)="taskprogress()">
+          <ion-thumbnail slot="start">
+            <img src="https://api.adorable.io/avatars/122/abott@adorable.png">
+          </ion-thumbnail>
+          <ion-label>
+            <h2>Child 1</h2>
+            <h3>Category event</h3>
+            <p>aliquam commodi! Consequatur quae nocupiditate unde, ullam impedit natus, sapiente eos quod nemo sint
+              repellat veritatis eveniet officiis nihil
+              quis!</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item (click)="taskprogress()">
+          <ion-thumbnail slot="start">
+            <ion-img src="https://api.adorable.io/avatars/60/c.png"> </ion-img>
+          </ion-thumbnail>
+          <ion-label>
+            <h2>Child 2</h2>
+            <h3>Category event</h3>
+            <p>aliquam commodi! Consequatur quae nocupiditate unde, ullam impedit natus, sapiente eos quod nemo sint
+              repellat veritatis eveniet officiis nihil
+              quis!</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-list-header>
+          <h3>Weekly</h3>
+        </ion-list-header>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="https://api.adorable.io/avatars/122/abott@adorable.png">
+          </ion-thumbnail>
+          <ion-label>
+            <h2>Child 1</h2>
+            <h3>Category event</h3>
+            <p>aliquam commodi! Consequatur quae nocupiditate unde, ullam impedit natus, sapiente eos quod nemo sint
+              repellat veritatis eveniet officiis nihil
+              quis!</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <ion-img src="https://api.adorable.io/avatars/60/c.png"> </ion-img>
+          </ion-thumbnail>
+          <ion-label>
+            <h2>Child 2</h2>
+            <h3>Category event</h3>
+            <p>aliquam commodi! Consequatur quae nocupiditate unde, ullam impedit natus, sapiente eos quod nemo sint
+              repellat veritatis eveniet officiis nihil
+              quis!</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-list-header>
+          <h3>Monthly</h3>
+        </ion-list-header>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="https://api.adorable.io/avatars/122/abott@adorable.png">
+          </ion-thumbnail>
+          <ion-label>
+            <h2>Child 1</h2>
+            <h3>Category event</h3>
+            <p>aliquam commodi! Consequatur quae nocupiditate unde, ullam impedit natus, sapiente eos quod nemo sint
+              repellat veritatis eveniet officiis nihil
+              quis!</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <ion-img src="https://api.adorable.io/avatars/60/c.png"> </ion-img>
+          </ion-thumbnail>
+          <ion-label>
+            <h2>Child 2</h2>
+            <h3>Category event</h3>
+            <p>aliquam commodi! Consequatur quae nocupiditate unde, ullam impedit natus, sapiente eos quod nemo sint
+              repellat veritatis eveniet officiis nihil
+              quis!</p>
+          </ion-label>
+        </ion-item>
+
+
+
+      </ion-list>
+
+      <ion-list *ngSwitchCase="'Completed'">
+        <ion-list-header>
+          <h3>Today</h3>
+        </ion-list-header>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="https://api.adorable.io/avatars/122/abott@adorable.png">
+          </ion-thumbnail>
+          <ion-label>
+            <h2>Child 1</h2>
+            <h3>Category event</h3>
+            <p>aliquam commodi! Consequatur quae nocupiditate unde, ullam impedit natus, sapiente eos quod nemo sint
+              repellat veritatis eveniet officiis nihil
+              quis!</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <ion-img src="https://api.adorable.io/avatars/60/c.png"> </ion-img>
+          </ion-thumbnail>
+          <ion-label>
+            <h2>Child 2</h2>
+            <h3>Category event</h3>
+            <p>aliquam commodi! Consequatur quae nocupiditate unde, ullam impedit natus, sapiente eos quod nemo sint
+              repellat veritatis eveniet officiis nihil
+              quis!</p>
+          </ion-label>
+        </ion-item>
+
+
+        <ion-list-header>
+          <h3>History</h3>
+        </ion-list-header>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="https://api.adorable.io/avatars/122/abott@adorable.png">
+          </ion-thumbnail>
+          <ion-label>
+            <h2>Child 1</h2>
+            <h3>Category event</h3>
+            <p>aliquam commodi! Consequatur quae nocupiditate unde, ullam impedit natus, sapiente eos quod nemo sint
+              repellat veritatis eveniet officiis nihil
+              quis!</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <ion-img src="https://api.adorable.io/avatars/60/c.png"> </ion-img>
+          </ion-thumbnail>
+          <ion-label>
+            <h2>Child 2</h2>
+            <h3>Category event</h3>
+            <p>aliquam commodi! Consequatur quae nocupiditate unde, ullam impedit natus, sapiente eos quod nemo sint
+              repellat veritatis eveniet officiis nihil
+              quis!</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+
+    <!-- <ion-slides #slides pager="false" [options]="sliderOptions" (ionSlidesChange)="slideShanged(slides)"
+      (ionSlidesDidLoad)="slideShanged(slides)">
+      <ion-slide>1</ion-slide>
+      <ion-slide>2</ion-slide>
+      <ion-slide>3</ion-slide>
+    </ion-slides> -->
+
+  </div>
+
+
+
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button color="success  ">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="package()" class="fab" color="dark">
+        <!-- <ion-icon name="logo-facebook">Package</ion-icon> --> Package
+      </ion-fab-button>
+      <ion-fab-button class="fab" color="dark"> Manual
+        <!-- <ion-icon name="logo-twitter">Manual</ion-icon> -->
+      </ion-fab-button>
+
+    </ion-fab-list>
+  </ion-fab>
+
+
+
+</ion-content>

@@ -1,9 +1,197 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Two
-    </ion-title>
+  <ion-toolbar scroll-Events="false">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon class="menu" color="light" slot="icon-only" name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon class="menu" color="light" slot="icon-only" name="person"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="light">Home</ion-title>
   </ion-toolbar>
-</ion-header>
 
-<ion-content></ion-content>
+</ion-header>
+<!-- <ion-header parallax imageUrl="../../assets/30b863ed75c38c1bb345ec5770f7f7eb.jpg" maximumHeight="350" expandedColor="#7CA873" titleColor="white">
+
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Parallax Header
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        Button
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header> -->
+
+
+<ion-content fullscreen class="background">
+  <p #triggerElement></p>
+  <div class="jumbotron text-center">
+    <!-- <ion-avatar>
+      <img src="../../assets/candra_foto.jpg">
+    </ion-avatar> -->
+    <h2>Learning Management System</h2>
+
+  </div>
+
+
+
+  <div #a (ionScroll)="handleScroll($event)" scroll-Events="true" class="ion-padding content-container">
+
+    <!-- <ion-card class="welcome-card">
+
+      <ion-card-header>
+
+        <ion-card-subtitle>Profil Anak</ion-card-subtitle>
+        <ion-card-title>Candra Dwi Kusuma</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugit hic maxime eos magni tempore
+          inventore ut in corporis nobis ipsum esse, dolorum id officiis. Sed perferendis quibusdam optio ut?</p>
+      </ion-card-content>
+
+      </ion-card> -->
+
+
+    <ion-list>
+      <ion-list-header>
+        <h3>Leadership</h3>
+      </ion-list-header>
+      <ion-list-header class="label">
+        <ion-label>Category Soft Skill</ion-label>
+      </ion-list-header>
+      <ion-text>
+
+      </ion-text>
+
+      <p padding>
+        We live in a world where powerful leaders are capable of accomplishing great things. No one is born a leader –
+        it’s something that people of worthy character grow to be through their experiences. Everyone deserves to be
+        equipped with the leadership skills they need to make a positive impact in the world. Your children are never
+        too young to learn the foundations of what leadership means.
+
+        Here are six ways to develop leadership skills in your children:
+        I saw a werewolf with a Chinese menu in his hand.
+        Walking through the <ion-text color="danger"><sub>streets</sub></ion-text> of Soho in the rain.
+        He <ion-text color="primary"><i>was</i></ion-text> looking for a place called Lee Ho Fook's.
+        Gonna get a <ion-text color="secondary"><a>big dish of beef chow mein.</a></ion-text>
+        <ion-text color="danger">
+          <ion-icon name="cut"></ion-icon>
+        </ion-text>
+      </p>
+      <!-- Default List Header -->
+      <ion-list-header>
+        <ion-label>List Header</ion-label>
+      </ion-list-header>
+
+      <!-- List Header with Button -->
+      <ion-list-header>
+        <ion-label>New This Week</ion-label>
+        <ion-button>See All</ion-button>
+      </ion-list-header>
+
+      <!-- List Header with Outline Button -->
+      <ion-list-header>
+        <ion-label>New This Week</ion-label>
+        <ion-button fill="outline">See All</ion-button>
+      </ion-list-header>
+
+      <!-- List Header Full Lines -->
+      <ion-list-header lines="full">
+        <ion-label>New This Week</ion-label>
+        <ion-button>See All</ion-button>
+      </ion-list-header>
+
+      <!-- List Header Inset Lines -->
+      <ion-list-header lines="inset">
+        <ion-label>New This Week</ion-label>
+        <ion-button>See All</ion-button>
+      </ion-list-header>
+
+      <!-- List Headers in Lists -->
+      <ion-list>
+        <ion-list-header lines="inset">
+          <ion-label>Recent</ion-label>
+          <ion-button>Clear</ion-button>
+        </ion-list-header>
+        <ion-item lines="none">
+          <ion-label color="primary">
+            <h1>I got you babe</h1>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
+      <ion-list>
+        <ion-list-header lines="inset">
+          <ion-label>Trending</ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-label color="primary">
+            <h1>harry styles</h1>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label color="primary">
+            <h1>christmas</h1>
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label color="primary">
+            <h1>falling</h1>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
+    </ion-list>
+  </div>
+
+  <!-- <div *ngFor="let cat of items" class="category-block">
+    <p #triggerElement></p>
+    <ion-row no-padding class="category-banner">
+      <ion-col text-left button tappable (click)="cat.expanded = !cat.expanded" align-self-center>
+        {{cat.category}}
+      </ion-col>
+    </ion-row> -->
+
+  <!-- <ion-slides [options]="sliderConfig">
+      <ion-slide *ngFor="let product of cat.products">
+        <div *ngIf=" cat.expanded">
+          <ion-card class="card">
+            <ion-card-header>
+              <ion-card-title>
+                {{ product.name }} - {{ product.point }} point
+              </ion-card-title>
+              <ion-card-content>
+                <img src="{{product.img}}">
+                <ion-button expand="full">View</ion-button>
+              </ion-card-content>
+            </ion-card-header>
+          </ion-card>
+        </div>
+      </ion-slide>
+    </ion-slides> -->
+
+  <!-- <ion-slides [options]="sliderConfig">
+      <ion-slide *ngFor="let product of cat.products">
+        <div *ngIf=" cat.expanded">
+
+          <ion-card class="card">
+            <img src="{{product.img}}">
+            <div class="card-title"> {{product.name}}</div>
+            <div class="card-subtitle"> {{product.point}} point</div>
+
+          </ion-card>
+        </div>
+      </ion-slide>
+    </ion-slides>
+
+  </div> -->
+</ion-content>
