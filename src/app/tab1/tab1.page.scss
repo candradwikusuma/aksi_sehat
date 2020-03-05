@@ -89,26 +89,26 @@ ion-toolbar {
   --min-height: 100px
 }
 
-ion-toolbar a {
+ion-title h5 {
 
-  margin-left: 20px;
+  margin-top: 40px;
   color: #7CA873;
   font-weight: bold;
 }
 
-ion-toolbar h4 {
-  margin-left: 20px;
+ion-title h4 {
+  margin-top: 20px;
 
 }
 
 .notif {
-  margin-right: 50px;
+  // margin-right: 50px;
   color: #7CA873;
 
 }
 
 ion-searchbar {
-  margin-top: -20px;
+  margin-top: 20px;
 }
 
 // .event img {

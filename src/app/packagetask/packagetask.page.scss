@@ -24,17 +24,11 @@
 //     -moz-background-size: cover;
 //     background-size: cover;
 // }
-// @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-// @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-// @import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-// @import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-// @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-// @import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
-// @import '../node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
 
-.menu {
-    margin: left;
-}
+
+// .menu {
+//     margin: left;
+// }
 
 //https://picsum.photos/1080
 .background {
@@ -81,85 +75,22 @@ ion-toolbar {
     padding-bottom: 30px;
 }
 
-.assignee {
-    width: 45px;
-    --border-radius: 100%;
-}
+// .assignee {
+//     width: 45px;
+//     --border-radius: 100%;
+// }
 
-ion-icon {
-    font-size: 64px;
-}
-
-
-// .welcome-card {
-//     margin-top: -80px;
-//     z-index: 5;
+// ion-icon {
+//     font-size: 64px;
 // }
 
 
-ion-badge {
-    color: #fff;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    border-radius: 100%;
-}
-
-.category-block {
-    margin-bottom: 4px;
-}
-
-.category-banner {
-    border-left: 8px solid var(--ion-color-secondary);
-    background: var(--ion-color-light);
-    height: 40px;
-    padding: 10px;
-    font-weight: 500;
-}
-
-ion-card-title {
-    font-size: 20px;
-
-}
 
 
 
 
 
 
-
-.card {
-    position: relative;
-    text-align: center;
-
-
-}
-
-.card-title {
-    position: absolute;
-    top: 40%;
-    font-size: 2.0em;
-    width: 100%;
-    font-weight: bold;
-    color: #fff;
-}
-
-.card-subtitle {
-    font-size: 1.0em;
-    position: absolute;
-    top: 70%;
-    width: 100%;
-    color: #fff;
-
-}
-
-
-.swiper-slide img {
-    width: auto;
-    max-width: 280px;
-    height: auto;
-    max-height: 100%;
-}
 
 .jumbotron h2 {
     text-align: center;

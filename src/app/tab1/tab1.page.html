@@ -1,27 +1,34 @@
-<ion-header>
+<!-- <ion-toolbar>
+  <ion-header>
+    <a>Welcome Back,</a>
+    <h4>Candra Dwi Kusuma</h4>
+  </ion-header>
 
 
-  <ion-toolbar>
-    <ion-header>
-      <a>Welcome Back,</a>
-      <h4>Candra Dwi Kusuma</h4>
-    </ion-header>
+  <ion-buttons slot="end">
 
+    <ion-icon class="notif" slot="icon-only" name="notifications-outline"></ion-icon>
 
-    <ion-buttons slot="end">
-      <ion-button>
-        <ion-icon class="notif" slot="icon-only" name="notifications-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
+  </ion-buttons>
+</ion-toolbar> -->
 
+<ion-toolbar mode="md">
 
+  <ion-buttons slot="primary">
+    <ion-button>
+      <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-title>
+    <h5>Welcome Back,</h5>
+    <h4>Candra Dwi Kusuma</h4>
+  </ion-title>
+</ion-toolbar>
 
-</ion-header>
 <ion-content padding>
 
   <!-- Animated Searchbar -->
-  <ion-searchbar color="light" animated></ion-searchbar>
+  <ion-searchbar mode="ios" color="light" animated></ion-searchbar>
 
 
 
@@ -48,7 +55,6 @@
 
     <ion-slides [options]="slide1pts">
       <ion-slide *ngFor="let product of a.products">
-
 
         <ion-card class="card">
           <img src="{{product.img}}">
